@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  sqlserver:
+    container_name: wordle_sqlserver
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "12345Ab##"
+      ACCEPT_EULA: "Y"
+    volumes: 
+      - ./data:/var/opt/mssql/data
+      - ./backup:/var/opt/mssql/backup 
+    networks:
+      - networdle
+  web:
+    image: francarmona/docker-ubuntu16-apache2-php7-mssql_client
+    container_name: wordle
+    volumes:
+     - ./src/:/var/www/
+    ports:
+     - 8888:80
+    depends_on:
+      - sqlserver
+    networks:
+      - networdle
+networks:
+  networdle:
+
