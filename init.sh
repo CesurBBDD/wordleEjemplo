@@ -1,0 +1,1 @@
+docker exec -it wordle_sqlserver /opt/mssql-tools/b.
