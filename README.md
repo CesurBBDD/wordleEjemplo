@@ -51,3 +51,5 @@ Practica Wordle
 4. Una tarea, una branch. Las branch se cierran despues de cada pull request. y de cerrar la tarea. 
 
 4. Al finalizar el sprint, se "entrega" una versión. Esa entrega, puede ser subir a la nuve la aplicación o a algun servidor web.
+
+5. Cada semana, tendremos una reunión de seguimiento del proyecto. Una reunión de 10-15 minutos con el scrum Manager del proyecto. Habitualmente, estas reuniones se hacen diarias al inicio de la jornada laboral. En estas reuniones se habla de impedimentos, de bloqueos que nos hayamos encontrado entre los miembros del equipo y el Scrum Manager. No son reuniones para resolver dudas de implementación sino solucionar conflictos en el desarrollo. 
