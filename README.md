@@ -1,7 +1,7 @@
-# wordleEjemplo
+# Mi Wordle (Ejemplo)
 Practica Wordle
 
-# Preparar el entorno
+## Preparar el entorno
 
 1. Instalar Docker
 2. Descargar repo
@@ -12,7 +12,7 @@ Practica Wordle
 
 
 
-# Prepara tu github.
+## Prepara tu github.
 
   1. Crea un repositorio privado
   2. Invita a tu compañero de trabajo
@@ -25,7 +25,7 @@ Practica Wordle
   9. Crea tu primer commit
   10. Crea tu primer Pull request
 
-# Planifica tu trabajo
+## Planifica tu trabajo
 
 1. **semana 1**
   Analisi planificación de tareas y reparto de tareas.
@@ -39,7 +39,7 @@ Practica Wordle
   pruebas
 
 
-# Flujo de trabajo en Scrum
+## Flujo de trabajo en Scrum
 
 
 1. Definir tareas y repartirlas por Sprints ( el desarrollo se hará por fases, cada fase es un sprint "entregable). Nosotros vamos a simular un sprint algo largo de 5 semanas. lo habitual son 2-3 semanas. Las tareas tienen 4 fases. Todo, en proceso, en espera, listo
