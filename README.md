@@ -37,3 +37,17 @@ Practica Wordle
   implementación
 5. **semana 5** 
   pruebas
+
+
+# Flujo de trabajo en Scrum
+
+
+1. Definir tareas y repartirlas por Sprints ( el desarrollo se hará por fases, cada fase es un sprint "entregable). Nosotros vamos a simular un sprint algo largo de 5 semanas. lo habitual son 2-3 semanas. Las tareas tienen 4 fases. Todo, en proceso, en espera, listo
+
+2. Cada tarea, se realiza en una branch independiente. La branch se vinvula a la tarea desde el gestor de proyectos de github. La tarea la realiza un desarrollador que tiene la tarea asignada.
+
+3. Cuando se finaliza la tarea, se realiza un pull request para que el otro compañero lo apruebe y lo fusione con la rama principal.
+
+4. Una tarea, una branch. Las branch se cierran despues de cada pull request. y de cerrar la tarea. 
+
+4. Al finalizar el sprint, se "entrega" una versión. Esa entrega, puede ser subir a la nuve la aplicación o a algun servidor web.
