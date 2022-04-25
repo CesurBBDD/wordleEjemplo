@@ -24,3 +24,16 @@ Practica Wordle
   8. Crea tu rama de desarrollo
   9. Crea tu primer commit
   10. Crea tu primer Pull request
+
+# Planifica tu trabajo
+
+1. semana 1
+  Analisi planificación de tareas y reparto de tareas.
+2. semana 2
+  Diseño:  bbdd diseño listo y pseocodigo de como vamos a resolver los problemas
+3. semana 3,.
+  Conocer el entorno de trabajo. conexion web con bbdd realizada
+4. semana 4
+  implementación
+5. semana 5 
+  pruebas
