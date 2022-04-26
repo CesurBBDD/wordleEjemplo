@@ -12,7 +12,7 @@ services:
       - ./data:/var/opt/mssql/data
       - ./backup:/var/opt/mssql/backup 
     networks:
-      - networdle2
+      - networdle
   web:
     image: francarmona/docker-ubuntu16-apache2-php7-mssql_client
     container_name: wordle
@@ -23,7 +23,7 @@ services:
     depends_on:
       - sqlserver
     networks:
-      - networdle2
+      - networdle
 networks:
   networdle:
 
