@@ -3,7 +3,7 @@
 	$srv="sqlserver";
 	$opc=array("Database"=>"wordle", "UID"=>"sa", "PWD"=>"12345Ab##");
 	$con=sqlsrv_connect($srv,$opc) or die(print_r(sqlsrv_errors(), true));
-	$sql="select id,palabra,cast(fecha as varchar) as fecha from palabras";
+	$sql="select  id,palabra,cast(fecha as varchar) as fecha from palabras";
 	$res=sqlsrv_query($con,$sql);
 
 ?>
