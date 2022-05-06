@@ -12,7 +12,7 @@
 <head>
 	<style>
 
-td,th   {border:1px solid  blue;}
+td,th   {border:1px solid  red;}
 
 	</style>
 </head>
