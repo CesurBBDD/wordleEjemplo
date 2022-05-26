@@ -66,13 +66,13 @@ Practica Wordle
     - 3.2. Seguramente, nos pedirá que autorizemos nuestra IP en el firewall de la BBDD en AZURE. Le diremos que si
     - 3.3 Cambiaremos la conexión de nuestra bbdd a la de azure. Ahora trabajaremos con la bbdd en la nube. Tenemos que cambiar los datos de conexión en la bbdd en todos los ficheros PHP que se conecten a la bbdd.
 4. Crear una imagen con docker y publicarla en Docker HUB como privada.
-  - 4.1. Crear el fichero Dockerfile en el raíz del proyecto como el que hay en este. Desde VSCode, botón derecho build image... nos pedirá un nombre a la imagen. Se lo ponemos.
-  - 4.2. Docker run -p 80:80 nombreimagen para comprobar que la imagen funciona.
-  - 4.3. Desde docker HUB crear un nuevo contenedor y ponerlo privado.
-  - 4.4. Docker login y os identificais con las credenciales de docker hub.
-  - 4.5 Docker tag nombreimagen bernat13/dfssfsdf (el primero es el nombre de la imagen creada en el 4.1, el segundo es el nick de dockerhub y el nombre de la imagen que has creado desde la web.)
-  - 4.6 docker push alias/nombreimagen
-  - 4.7 La imagen se ha creado en docker hub.
+    4.1. Crear el fichero Dockerfile en el raíz del proyecto como el que hay en este. Desde VSCode, botón derecho build image... nos pedirá un nombre a la imagen. Se lo ponemos.
+    4.2. Docker run -p 80:80 nombreimagen para comprobar que la imagen funciona.
+    4.3. Desde docker HUB crear un nuevo contenedor y ponerlo privado.
+    4.4. Docker login y os identificais con las credenciales de docker hub.
+    4.5 Docker tag nombreimagen bernat13/dfssfsdf (el primero es el nombre de la imagen creada en el 4.1, el segundo es el nick de dockerhub y el nombre de la imagen que has creado desde la web.)
+    4.6 docker push alias/nombreimagen
+    4.7 La imagen se ha creado en docker hub.
 5. Desplegar la imagen en Azure.
   - 5.1 En QuickStarter center, le damos a create new app -> build and host...
   - 5.2 Rellenamos las opciones que nos dá, escoger siempre la opción más barata. y más cercana que os deje con la licencia Azure for students. En publish, le daremos a docker container linux.
