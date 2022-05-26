@@ -51,13 +51,14 @@ $a = session_id();
 	background-color:#6aaa64;
 }
 .wordle {
-  width:400px;
+  width:100%;
+  max-width:375px;
  
 }
 .cuadrado {
-	width:70px;
-	height:70px;
-	font-size:40px;
+	width:65px;
+	height:65px;
+	font-size:35px;
 	float:left;
 	margin: 5px;
     border: 2px solid #787c7e;
