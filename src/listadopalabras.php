@@ -1,9 +1,9 @@
 <?php
 	//Crear la conexión
 	$srv="sqlserver";
-	$opc=array("Database"=>"wordle", "UID"=>"sa", "PWD"=>"12345Ab##");
+	$opc=array("Database"=>"wordle", "UID"=>"wordle", "PWD"=>"12345Ab##");
 	$con=sqlsrv_connect($srv,$opc) or die(print_r(sqlsrv_errors(), true));
-	$sql="select top 50 id,palabra,cast(fecha as varchar) as fecha from palabras";
+	$sql="select top 3  id,palabra,cast(fecha as varchar) as fecha from palabras";
 	$res=sqlsrv_query($con,$sql);
 
 ?>
@@ -12,7 +12,7 @@
 <head>
 	<style>
 
-td,th   {border:1px solid  red;}
+td,th   {border:1px solid  green;}
 
 	</style>
 </head>
@@ -35,7 +35,7 @@ td,th   {border:1px solid  red;}
 			{?>
 			<tr>
 				<td><?php echo $row['id'];?></td>
-				<td><?php echo $row['palabra'];?></td>
+				<td>hola</td>
 				<td><?php echo $row['fecha'];?></td>
 			</tr>
 			<?php

@@ -11,23 +11,15 @@
 <head>
 	<style>
         td,th   {border:1px solid  blue;}
-
-		.Piano { background-color: green}
 	</style>
 </head>
 <body>
-<?php
-  $row=sqlsrv_fetch_array($res);
-?>
-		
-	<H1 class="<?php 	echo $row['palabra'];
- ?>">
-
-<?php
-				    sqlsrv_close($con);
-					?>
-
-hola
+	<H1>
+		<?php
+            $row=sqlsrv_fetch_array($res);
+	        echo $row['palabra'];
+		    sqlsrv_close($con);
+		?>
 </h1>
 </body>
 </html>
