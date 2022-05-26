@@ -62,9 +62,9 @@ Practica Wordle
 1. Tener una cuenta en Docker Hub. Si no la tengo, me registro.
 2. Tener una cuenta en Azure for Students. Buscar en google e indentificaros con la cuenta de teams del centro.
 3. Crear una BBDD en Azure. -> mirar el PDF. Hay que crear una bbdd en AZURE para nuestro Wordle, crear un servidor y la bbdd.
-    - 3.1. Desde Azure Data Studio, nos conectaremos a esa bbdd y crearemos la bbdd y la rellenaremos ( Sin Bulks ni .baks).
-    - 3.2. Seguramente, nos pedirá que autorizemos nuestra IP en el firewall de la BBDD en AZURE. Le diremos que si
-    - 3.3 Cambiaremos la conexión de nuestra bbdd a la de azure. Ahora trabajaremos con la bbdd en la nube. Tenemos que cambiar los datos de conexión en la bbdd en todos los ficheros PHP que se conecten a la bbdd.
+    1. Desde Azure Data Studio, nos conectaremos a esa bbdd y crearemos la bbdd y la rellenaremos ( Sin Bulks ni .baks).
+    2. Seguramente, nos pedirá que autorizemos nuestra IP en el firewall de la BBDD en AZURE. Le diremos que si
+    3. Cambiaremos la conexión de nuestra bbdd a la de azure. Ahora trabajaremos con la bbdd en la nube. Tenemos que cambiar los datos de conexión en la bbdd en todos los ficheros PHP que se conecten a la bbdd.
 4. Crear una imagen con docker y publicarla en Docker HUB como privada.
     4.1. Crear el fichero Dockerfile en el raíz del proyecto como el que hay en este. Desde VSCode, botón derecho build image... nos pedirá un nombre a la imagen. Se lo ponemos.
     4.2. Docker run -p 80:80 nombreimagen para comprobar que la imagen funciona.
