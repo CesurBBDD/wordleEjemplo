@@ -21,7 +21,7 @@ $a = session_id();
 	substring(resultado,2,1) as res2,
 	substring(resultado,3,1) as res3,
 	substring(resultado,4,1) as res4,
-	substring(resultado,5,1) as res5 from intentos i
+	substring(resultado,5,1) as res5,dbo.DimePalabraDeHoy() as palabradehoy from intentos i
 	 inner join jugadores j on j.id=i.idjugador
 	inner join palabras p on i.idpalabra=p.id
 	where j.nombre = '" . $a . "' and fecha = cast(getdate() as date) ";
@@ -87,9 +87,10 @@ $a = session_id();
 	<?php 
 
 	$contador = 1;
-
+	$palabradehoy="";
 	while($row=sqlsrv_fetch_array($res))
 	{
+		$palabradehoy = $row['palabradehoy'];
 			?>
         <div class="linea">
 			<div class="cuadrado <?php echo $row['res1'];?>" > <?php echo $row['pal1'];?></div>
@@ -117,7 +118,10 @@ while ($contador <=6)
 	$contador++;
 }
 ?>
-
+<?php 
+		if($palabrasintentadas >6)
+			echo "La palabra de hoy era:" . $palabradehoy;
+		?>
 
 		<form  class="border p-3 form" method="post" action="./guardarintento.php">
     	  	<div class="form-group">

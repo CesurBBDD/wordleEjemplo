@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordle de Bernat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+	<style>
+
+.A {
+	background-color:#c9b458;
+}
+
+.G {
+	background-color:#787c7e;
+}
+
+.V {
+	background-color:#6aaa64;
+}
+.wordle {
+  width:100%;
+  max-width:375px;
+ 
+}
+.cuadrado {
+	width:65px;
+	height:65px;
+	font-size:35px;
+	float:left;
+	margin: 5px;
+    border: 2px solid #787c7e;
+  	text-align: center;
+  	text-transform: uppercase;
+  	color:white;
+  	font: sans-serif;
+  	font-weight: bold;
+}
+.linea {
+    width:100%;
+	float:left;
+
+	
+}
+	</style>
+</head>
+<body>
+<div class="container">
+  <div class="abs-center">
+    
+ 
+
+	<h1 >Wordle de Bernat</h1>
+	<div class ="wordle ">
+	
+		<div class="linea">
+			<div class="cuadrado A" >A</div>
+			<div class="cuadrado G" >V</div>
+			<div class="cuadrado V" >I</div>
+			<div class="cuadrado V" >O</div>
+			<div class="cuadrado A" >N</div>
+		</div>
+		<div class="linea">
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+		</div>
+			<div class="linea">
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+		</div>	
+		<div class="linea">
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+		</div>	
+		<div class="linea">
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+		</div>
+		<div class="linea">
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+			<div class="cuadrado" ></div>
+		</div>
+
+
+		<form  class="border p-3 form" method="post" action="./guardarintento.php">
+    	  	<div class="form-group">
+        		<input type="text" name="palabra" id="palabra" class="form-control" maxlength="5" autofocus >
+      		</div>
+       	 	<button type="submit" class="btn btn-primary" style="display:none;" >enviar</button>
+    	</form>
+	
+
+	</div>
+
+  </div>
+</div>
+
+</body>
+</html>
