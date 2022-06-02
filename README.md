@@ -56,7 +56,7 @@ Practica Wordle
 
 
 
-## Requisitos para subir nuestro wordle a la web.
+## Requisitos para subir nuestro wordle a la web. ( PARA LA ENTREGA DEL TRABAJO, NO SEGUIR LEYENDO)
 
 
 1. Tener una cuenta en Docker Hub. Si no la tengo, me registro.
